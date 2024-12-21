@@ -1,8 +1,5 @@
-import {
-  checkEmail,
-  getWelcomeTemplate,
-  sendTemplateToEmail,
-} from "./email.js";
+import { checkEmail, sendTemplateToEmail } from "./email.js";
+import { getWelcomeTemplate } from "./template.js";
 const createUser = ({ name, age, school, email, createAt }) => {
   // 1. 이메일이 정상인지 확인(존재여부, @포함여부)
   const isEmail = checkEmail(email);
